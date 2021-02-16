@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 18px;
+  background: hsl(185, 75%, 39%);
+  height: 100vh;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.carta {
+  background: white;
+  border-radius: 15px;
+}
+.carta-head img {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.carta-body img {
+  border-radius: 50%;
+  margin-top: -55px;
+  border: 7px solid white;
+  background: white;
+}
+.carta-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Kumbh Sans", sans-serif;
+  color: hsl(229, 23%, 23%);
+}
+.info span {
+  color: hsl(0, 0%, 59%);
+}
+.place {
+  color: hsl(0, 0%, 59%);
+  margin-top: 10px;
+  font-size: 14px;
+}
+.carta-footer {
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.infotter {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
+.number {
+  font-weight: bold;
+  color: hsl(229, 23%, 23%);
+  font-family: "Kumbh Sans", sans-serif;
+}
+.type {
+  color: hsl(0, 0%, 59%);
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 14px;
+  margin-top: 5px;
+}
+.top-img {
+  position: fixed;
+  left: -20%;
+  top: -60%;
+  z-index: -1;
+}
+.bottom-img {
+  position: fixed;
+  right: -20%;
+  bottom: -70%;
+  z-index: -1;
+}
+@media screen and (max-width: 375px) {
+  .top-img {
+    transform: translateX(-70%) translateY(-20%);
+    
+  }
+  .bottom-img {
+    transform: translate(70%,20%);
+  }
+}
