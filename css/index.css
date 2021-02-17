@@ -74,22 +74,25 @@ body {
 }
 .top-img {
   position: fixed;
-  left: -20%;
-  top: -60%;
+  left: 0;
+  top: 0;
+  transform: translate(-25%,-60%);
   z-index: -1;
 }
 .bottom-img {
   position: fixed;
-  right: -20%;
-  bottom: -70%;
+  right: 0;
+  bottom: 0;
+  transform: translate(25%,60%);
   z-index: -1;
 }
 @media screen and (max-width: 375px) {
   .top-img {
-    transform: translateX(-70%) translateY(-20%);
+    transform: translateX(-80%) translateY(-60%);
     
   }
   .bottom-img {
-    transform: translate(70%,20%);
+    transform: translate(80%,60%);
+    
   }
 }
