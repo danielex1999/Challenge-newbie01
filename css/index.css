@@ -70,6 +70,7 @@ body {
   font-weight: bold;
   color: hsl(229, 23%, 23%);
   font-family: "Kumbh Sans", sans-serif;
+  font-size: 16px;
 }
 .type {
   color: hsl(227, 10%, 46%);
@@ -89,7 +90,7 @@ body {
   position: fixed;
   right: 0;
   bottom: 0;
-  transform: translate(25%,60%);
+  transform: translate(25%,65%);
   z-index: -1;
 }
 hr{
